@@ -225,7 +225,7 @@ $(document).ready(function () {
                             .removeClass('input_is_not_empty')
                             .closest('.form_div')
                             .append(`<p class="help-block m-0">The password must be at least 8 characters., The password confirmation does not match.</p>`)
-                    } else if ($(this).val().length == 8 && $(this).val() != $('#register-form #password_confirmation').val()) {
+                    } else if ($(this).val().length >= 8 && $(this).val() != $('#register-form #password_confirmation').val()) {
                         $(this).addClass('input_border')
                             .removeClass('input_is_not_empty')
                             .closest('.form_div')
@@ -257,7 +257,7 @@ $(document).ready(function () {
                             .removeClass('input_is_not_empty')
                             .closest('.form_div')
                             .append(`<p class="help-block m-0">The password must be at least 8 characters., The password confirmation does not match.</p>`)
-                    } else if ($('#register-form #password').val().length == 8 && $('#register-form #password').val() != $(this).val()) {
+                    } else if ($('#register-form #password').val().length >= 8 && $('#register-form #password').val() != $(this).val()) {
                         $('#register-form #password').addClass('input_border')
                             .removeClass('input_is_not_empty')
                             .closest('.form_div')
@@ -829,7 +829,7 @@ $(document).ready(function () {
                             .removeClass('input_is_not_empty')
                             .closest('.form_div')
                             .append(`<p class="help-block m-0">The password must be at least 8 characters., The password confirmation does not match.</p>`)
-                    } else if ($(this).val().length == 8 && $(this).val() != $('#OTP_new #password_confirmation').val()) {
+                    } else if ($(this).val().length >= 8 && $(this).val() != $('#OTP_new #password_confirmation').val()) {
                         $(this).addClass('input_border')
                             .removeClass('input_is_not_empty')
                             .closest('.form_div')
@@ -861,7 +861,7 @@ $(document).ready(function () {
                             .removeClass('input_is_not_empty')
                             .closest('.form_div')
                             .append(`<p class="help-block m-0">The password must be at least 8 characters., The password confirmation does not match.</p>`)
-                    } else if ($('#OTP_new #password').val().length == 8 && $('#OTP_new #password').val() != $(this).val()) {
+                    } else if ($('#OTP_new #password').val().length >= 8 && $('#OTP_new #password').val() != $(this).val()) {
                         $('#OTP_new #password').addClass('input_border')
                             .removeClass('input_is_not_empty')
                             .closest('.form_div')
@@ -1133,7 +1133,7 @@ $(document).ready(function () {
                                         .removeClass('input_is_not_empty')
                                         .closest('.form_div')
                                         .append(`<p class="help-block m-0">The password must be at least 8 characters., The password confirmation does not match.</p>`)
-                                } else if ($(this).val().length == 8 && $(this).val() != $('#edit #password_confirmation').val()) {
+                                } else if ($(this).val().length >= 8 && $(this).val() != $('#edit #password_confirmation').val()) {
                                     $(this).addClass('input_border')
                                         .removeClass('input_is_not_empty')
                                         .closest('.form_div')
@@ -1163,7 +1163,7 @@ $(document).ready(function () {
                             .removeClass('input_is_not_empty')
                             .closest('.form_div')
                             .append(`<p class="help-block m-0">The password must be at least 8 characters., The password confirmation does not match.</p>`)
-                    } else if ($('#edit #password').val().length == 8 && $('#edit #password').val() != $(this).val()) {
+                    } else if ($('#edit #password').val().length >= 8 && $('#edit #password').val() != $(this).val()) {
                         $('#edit #password').addClass('input_border')
                             .removeClass('input_is_not_empty')
                             .closest('.form_div')
@@ -1205,5 +1205,4 @@ $(document).ready(function () {
      }
      resetModal()
     //end Reset Modal
-
 })

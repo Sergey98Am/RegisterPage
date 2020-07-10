@@ -56,10 +56,14 @@ class ProfileController extends Controller
 
         if (!$request->filled('password')) {
             $user->fill($input)->save();
+
+            return;
         }
 
         $user->password = bcrypt($request->password);
         $user->fill($input)->save();
+
+        return;
 
     }
 }
