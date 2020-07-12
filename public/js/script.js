@@ -1189,7 +1189,7 @@ $(document).ready(function () {
     //Reset Modal
     function resetModal(){
         $('body').on('hidden.bs.modal', '.modal', function (e) {
-            $('.modal').parent()[0].reset();
+       
     
             $.each($('.modal'), (key, value) => {
                 $(value).parent()[0].reset();
